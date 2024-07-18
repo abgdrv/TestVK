@@ -15,13 +15,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47E051EC2C49989D0011CB98 /* WeatherEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E051EC2C49989D0011CB98 /* Weather Event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Event.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E051EF2C49989D0011CB98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E051F12C49989D0011CB98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		47E051F32C49989D0011CB98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47E051F82C49989E0011CB98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		47E051FB2C49989E0011CB98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		47E051FD2C49989E0011CB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = WeatherEvent/Resource/Info.plist; sourceTree = SOURCE_ROOT; };
+		47E0520E2C49A1BA0011CB98 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 		47E051ED2C49989D0011CB98 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47E051EC2C49989D0011CB98 /* WeatherEvent.app */,
+				47E051EC2C49989D0011CB98 /* Weather Event.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,29 +54,32 @@
 		47E051EE2C49989D0011CB98 /* WeatherEvent */ = {
 			isa = PBXGroup;
 			children = (
-				47E052032C4999E50011CB98 /* Source */,
-				47E052042C4999EA0011CB98 /* Resource */,
+				47E052032C4999E50011CB98 /* Sources */,
+				47E052042C4999EA0011CB98 /* Resources */,
 			);
 			path = WeatherEvent;
 			sourceTree = "<group>";
 		};
-		47E052032C4999E50011CB98 /* Source */ = {
+		47E052032C4999E50011CB98 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				47E052052C4999F60011CB98 /* _App */,
+				47E052102C49A1DF0011CB98 /* _Common */,
+				47E052112C49A1EB0011CB98 /* _Modules */,
+				47E052122C49A1F40011CB98 /* Utils */,
 				47E051F32C49989D0011CB98 /* ViewController.swift */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		47E052042C4999EA0011CB98 /* Resource */ = {
+		47E052042C4999EA0011CB98 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				47E052062C499A120011CB98 /* Image */,
 				47E051FA2C49989E0011CB98 /* LaunchScreen.storyboard */,
-				47E051FD2C49989E0011CB98 /* Info.plist */,
+				47E0520E2C49A1BA0011CB98 /* Info.plist */,
 			);
-			path = Resource;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		47E052052C4999F60011CB98 /* _App */ = {
@@ -96,6 +99,27 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		47E052102C49A1DF0011CB98 /* _Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Common;
+			sourceTree = "<group>";
+		};
+		47E052112C49A1EB0011CB98 /* _Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Modules;
+			sourceTree = "<group>";
+		};
+		47E052122C49A1F40011CB98 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,7 +137,7 @@
 			);
 			name = WeatherEvent;
 			productName = WeatherEvent;
-			productReference = 47E051EC2C49989D0011CB98 /* WeatherEvent.app */;
+			productReference = 47E051EC2C49989D0011CB98 /* Weather Event.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +338,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QVR9UVA7V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherEvent/Resource/Info.plist;
+				INFOPLIST_FILE = WeatherEvent/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -325,7 +349,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abgdrv.WeatherEvent;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Weather Event";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QVR9UVA7V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherEvent/Resource/Info.plist;
+				INFOPLIST_FILE = WeatherEvent/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -352,7 +376,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abgdrv.WeatherEvent;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Weather Event";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
