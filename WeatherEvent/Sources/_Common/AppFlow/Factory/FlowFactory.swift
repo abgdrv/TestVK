@@ -7,6 +7,10 @@
 
 import Foundation
 
-final class FlowFactory {
+final class FlowFactory: SplashScreenFlowFactory {
     
+    func makeSpashScreen() -> SplashScreenView {
+        let vc = SplashScreenViewController()
+        return vc
+    }
 }
