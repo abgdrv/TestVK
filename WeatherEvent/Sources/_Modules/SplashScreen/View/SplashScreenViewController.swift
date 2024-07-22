@@ -11,40 +11,31 @@ final class SplashScreenViewController: BaseViewController, SplashScreenView {
     
     var didFinish: VoidCallback?
     
-    private let textAnimation = 3.0
+    private let textAnimation = 2.0
     private let overlapAnimation = 0.5
-    
-    private let generator = UIImpactFeedbackGenerator(style: .soft)
-    
-    private lazy var circleView: UIView = build {
-        $0.backgroundColor = Colors.mainTitle.uiColor
-        $0.layer.cornerRadius = 50 // Assuming the initial size is 100x100
+        
+    private lazy var overlapView = UIView().apply {
+        $0.backgroundColor = Colors.Gradient.snow1.uiColor
+        $0.layer.cornerRadius = 50
         $0.alpha = 0
         $0.transform = CGAffineTransform(scaleX: 0, y: 0)
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    private lazy var logoImageView: UIImageView = build {
-        $0.image = Images.appIcon.uiImage
+    private lazy var logoImageView = UIImageView(image: Images.appIcon.uiImage).apply {
         $0.contentMode = .scaleAspectFit
         $0.clipsToBounds = true
         $0.layer.cornerRadius = 16
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    private lazy var titleLabel: UILabel = build {
+    private lazy var titleLabel = UILabel().apply {
         $0.set(font: .systemFont(ofSize: 24, weight: .semibold), textColor: Colors.mainTitle.uiColor, textAlignment: .center)
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    private lazy var containerStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [logoImageView, titleLabel])
-        stackView.axis = .vertical
-        stackView.alignment = .center
-        stackView.spacing = 16
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        return stackView
-    }()
+    private lazy var containerStackView = UIStackView(
+        views: [logoImageView, titleLabel],
+        alignment: .center,
+        spacing: 16
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,33 +49,27 @@ final class SplashScreenViewController: BaseViewController, SplashScreenView {
 private extension SplashScreenViewController {
     
     func setupViews() {
-        view.addSubviews(circleView, containerStackView)
-        view.bringSubviewToFront(circleView)
+        view.addSubviews(overlapView, containerStackView)
+        view.bringSubviewToFront(overlapView)
     }
     
     func setupConstraints() {
-        NSLayoutConstraint.activate([
-            containerStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            containerStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            logoImageView.widthAnchor.constraint(equalToConstant: 100),
-            logoImageView.heightAnchor.constraint(equalToConstant: 100)
-        ])
-        
-        NSLayoutConstraint.activate([
-            circleView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            circleView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            circleView.widthAnchor.constraint(equalToConstant: 100),
-            circleView.heightAnchor.constraint(equalToConstant: 100)
-        ])
+        containerStackView.centerInSuperview()
+        logoImageView.setSize(width: 100, height: 100)
+        overlapView.centerInSuperview()
+        overlapView.setSize(width: 100, height: 100)
     }
 }
 
 private extension SplashScreenViewController {
     
     func startAnimation() {
+        let generator = UIImpactFeedbackGenerator(style: .soft)
+        
         titleLabel.setTyping(text: LocalizableKeys.appName.localized, characterDelay: textAnimation) { [weak self] in
-            self?.generator.prepare()
-            self?.generator.impactOccurred()
+            guard let _ = self else { return }
+            generator.prepare()
+            generator.impactOccurred()
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + textAnimation + overlapAnimation) {
@@ -100,8 +85,8 @@ private extension SplashScreenViewController {
         let maxScaleEffect: CGFloat = 20.0
         
         UIView.animate(withDuration: overlapAnimation, delay: 0, options: .curveEaseInOut, animations: {
-            self.circleView.transform = CGAffineTransform(scaleX: maxScaleEffect, y: maxScaleEffect)
-            self.circleView.alpha = 1
+            self.overlapView.transform = CGAffineTransform(scaleX: maxScaleEffect, y: maxScaleEffect)
+            self.overlapView.alpha = 1
         }, completion: nil)
     }
 }

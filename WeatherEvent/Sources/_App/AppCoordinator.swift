@@ -29,14 +29,26 @@ private extension AppCoordinator {
         
         coordinator.finishFlow = { [weak self] in
             self?.removeDependency(coordinator)
-            self?.runWeatherEventFlow()
+            self?.runMainFlow()
         }
         
         addDependency(coordinator)
         coordinator.start()
     }
     
-    func runWeatherEventFlow() {
+    func runMainFlow() {
+        var coordinator = coordinatorFactory.makeMainScreenCoordinator(router: router)
         
+        coordinator.finishFlow = { [weak self] in
+            self?.removeDependency(coordinator)
+            // Transition to another view
+        }
+        
+        coordinator.languageChanged = { [weak self] in
+            self?.runMainFlow()
+        }
+        
+        addDependency(coordinator)
+        coordinator.start()
     }
 }

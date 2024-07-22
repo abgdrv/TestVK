@@ -23,7 +23,6 @@
 		47E052342C4AFB8E0011CB98 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052332C4AFB8E0011CB98 /* UIApplication+Extensions.swift */; };
 		47E052362C4C12CE0011CB98 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052352C4C12CE0011CB98 /* AppCoordinator.swift */; };
 		47E0523C2C4C16610011CB98 /* SplashScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0523B2C4C16610011CB98 /* SplashScreenCoordinator.swift */; };
-		47E0523E2C4C167C0011CB98 /* SplashScreenOutputCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0523D2C4C167C0011CB98 /* SplashScreenOutputCoordinator.swift */; };
 		47E052402C4C17C20011CB98 /* SplashScreenFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0523F2C4C17C20011CB98 /* SplashScreenFlowFactory.swift */; };
 		47E052422C4C17F80011CB98 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052412C4C17F80011CB98 /* SplashScreenView.swift */; };
 		47E052442C4C18410011CB98 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052432C4C18410011CB98 /* SplashScreenViewController.swift */; };
@@ -37,11 +36,23 @@
 		47E052592C4C1D640011CB98 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052582C4C1D640011CB98 /* String+Extensions.swift */; };
 		47E0525C2C4C1F6E0011CB98 /* LanguageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0525B2C4C1F6E0011CB98 /* LanguageType.swift */; };
 		47E0525F2C4C20C40011CB98 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0525E2C4C20C40011CB98 /* UserDefaultsService.swift */; };
-		47E052612C4C44F40011CB98 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052602C4C44F40011CB98 /* Builder.swift */; };
 		47E052632C4C4CF60011CB98 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052622C4C4CF60011CB98 /* UILabel+Extensions.swift */; };
 		47E052662C4CECEA0011CB98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47E052642C4CECEA0011CB98 /* Localizable.strings */; };
 		47E052692C4CF3770011CB98 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052682C4CF3770011CB98 /* UIView+Extensions.swift */; };
 		47E0526B2C4D2C180011CB98 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0526A2C4D2C180011CB98 /* UIStackView+Extensions.swift */; };
+		47E052722C4D49E50011CB98 /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052712C4D49E50011CB98 /* MainScreenCoordinator.swift */; };
+		47E052742C4D4A6C0011CB98 /* MainScreenFlowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052732C4D4A6C0011CB98 /* MainScreenFlowFactory.swift */; };
+		47E052762C4D4AC30011CB98 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052752C4D4AC30011CB98 /* MainScreenView.swift */; };
+		47E052782C4D4B200011CB98 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052772C4D4B200011CB98 /* MainScreenViewController.swift */; };
+		47E0527A2C4D4B460011CB98 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052792C4D4B460011CB98 /* MainScreenViewModel.swift */; };
+		47E0527C2C4D54630011CB98 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0527B2C4D54630011CB98 /* UICollectionView+Extensions.swift */; };
+		47E0527E2C4D7FC30011CB98 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0527D2C4D7FC30011CB98 /* NSObject+Extensions.swift */; };
+		47E052812C4D84500011CB98 /* WeatherEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052802C4D84500011CB98 /* WeatherEventCell.swift */; };
+		47E052832C4D85C90011CB98 /* WeatherEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052822C4D85C90011CB98 /* WeatherEvent.swift */; };
+		47E052852C4D8BA30011CB98 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052842C4D8BA30011CB98 /* GradientView.swift */; };
+		47E052872C4E75670011CB98 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052862C4E75670011CB98 /* UIColor+Extensions.swift */; };
+		47E052892C4EA6550011CB98 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052882C4EA6550011CB98 /* AnimationView.swift */; };
+		47E052912C4EF5030011CB98 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E052902C4EF5030011CB98 /* UIDevice+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +74,6 @@
 		47E052332C4AFB8E0011CB98 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		47E052352C4C12CE0011CB98 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		47E0523B2C4C16610011CB98 /* SplashScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenCoordinator.swift; sourceTree = "<group>"; };
-		47E0523D2C4C167C0011CB98 /* SplashScreenOutputCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenOutputCoordinator.swift; sourceTree = "<group>"; };
 		47E0523F2C4C17C20011CB98 /* SplashScreenFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenFlowFactory.swift; sourceTree = "<group>"; };
 		47E052412C4C17F80011CB98 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		47E052432C4C18410011CB98 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +87,24 @@
 		47E052582C4C1D640011CB98 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		47E0525B2C4C1F6E0011CB98 /* LanguageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageType.swift; sourceTree = "<group>"; };
 		47E0525E2C4C20C40011CB98 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
-		47E052602C4C44F40011CB98 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		47E052622C4C4CF60011CB98 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		47E052652C4CECEA0011CB98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		47E052672C4CED010011CB98 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		47E052682C4CF3770011CB98 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		47E0526A2C4D2C180011CB98 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		47E052712C4D49E50011CB98 /* MainScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinator.swift; sourceTree = "<group>"; };
+		47E052732C4D4A6C0011CB98 /* MainScreenFlowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenFlowFactory.swift; sourceTree = "<group>"; };
+		47E052752C4D4AC30011CB98 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		47E052772C4D4B200011CB98 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		47E052792C4D4B460011CB98 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		47E0527B2C4D54630011CB98 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		47E0527D2C4D7FC30011CB98 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		47E052802C4D84500011CB98 /* WeatherEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEventCell.swift; sourceTree = "<group>"; };
+		47E052822C4D85C90011CB98 /* WeatherEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEvent.swift; sourceTree = "<group>"; };
+		47E052842C4D8BA30011CB98 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		47E052862C4E75670011CB98 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		47E052882C4EA6550011CB98 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		47E052902C4EF5030011CB98 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				47E052372C4C13B80011CB98 /* SplashScreen */,
+				47E0526C2C4D43F70011CB98 /* MainScreen */,
 			);
 			path = _Modules;
 			sourceTree = "<group>";
@@ -250,7 +273,6 @@
 		47E0522E2C4AFB4C0011CB98 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				47E052602C4C44F40011CB98 /* Builder.swift */,
 				47E052302C4AFB620011CB98 /* UIKit */,
 				47E0522F2C4AFB5B0011CB98 /* Foundation */,
 			);
@@ -260,6 +282,7 @@
 		47E0522F2C4AFB5B0011CB98 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				47E0527D2C4D7FC30011CB98 /* NSObject+Extensions.swift */,
 				47E052582C4C1D640011CB98 /* String+Extensions.swift */,
 			);
 			path = Foundation;
@@ -272,6 +295,9 @@
 				47E052622C4C4CF60011CB98 /* UILabel+Extensions.swift */,
 				47E052682C4CF3770011CB98 /* UIView+Extensions.swift */,
 				47E0526A2C4D2C180011CB98 /* UIStackView+Extensions.swift */,
+				47E0527B2C4D54630011CB98 /* UICollectionView+Extensions.swift */,
+				47E052862C4E75670011CB98 /* UIColor+Extensions.swift */,
+				47E052902C4EF5030011CB98 /* UIDevice+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -290,7 +316,6 @@
 			isa = PBXGroup;
 			children = (
 				47E0523B2C4C16610011CB98 /* SplashScreenCoordinator.swift */,
-				47E0523D2C4C167C0011CB98 /* SplashScreenOutputCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -315,7 +340,9 @@
 		47E052452C4C19090011CB98 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				47E052482C4C19380011CB98 /* BaseViewController.swift */,
+				47E0528A2C4EA6580011CB98 /* ViewController */,
+				47E052842C4D8BA30011CB98 /* GradientView.swift */,
+				47E052882C4EA6550011CB98 /* AnimationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				47E0525B2C4C1F6E0011CB98 /* LanguageType.swift */,
+				47E052822C4D85C90011CB98 /* WeatherEvent.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -353,6 +381,67 @@
 				47E0525E2C4C20C40011CB98 /* UserDefaultsService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		47E0526C2C4D43F70011CB98 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				47E0526D2C4D49A50011CB98 /* Coordinator */,
+				47E0526E2C4D49AA0011CB98 /* Factory */,
+				47E0526F2C4D49B10011CB98 /* View */,
+				47E052702C4D49D60011CB98 /* ViewModel */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		47E0526D2C4D49A50011CB98 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				47E052712C4D49E50011CB98 /* MainScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		47E0526E2C4D49AA0011CB98 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				47E052732C4D4A6C0011CB98 /* MainScreenFlowFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		47E0526F2C4D49B10011CB98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47E052752C4D4AC30011CB98 /* MainScreenView.swift */,
+				47E052772C4D4B200011CB98 /* MainScreenViewController.swift */,
+				47E0527F2C4D84220011CB98 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47E052702C4D49D60011CB98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				47E052792C4D4B460011CB98 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		47E0527F2C4D84220011CB98 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				47E052802C4D84500011CB98 /* WeatherEventCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		47E0528A2C4EA6580011CB98 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47E052482C4C19380011CB98 /* BaseViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,11 +518,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E052342C4AFB8E0011CB98 /* UIApplication+Extensions.swift in Sources */,
+				47E0527A2C4D4B460011CB98 /* MainScreenViewModel.swift in Sources */,
+				47E052782C4D4B200011CB98 /* MainScreenViewController.swift in Sources */,
 				47E0524E2C4C1A680011CB98 /* Colors.swift in Sources */,
 				47E052242C4AE4B90011CB98 /* FlowFactory.swift in Sources */,
 				47E0524C2C4C1A0F0011CB98 /* ColorsProtocol.swift in Sources */,
 				47E052182C4ADD590011CB98 /* BaseCoordinator.swift in Sources */,
+				47E0527E2C4D7FC30011CB98 /* NSObject+Extensions.swift in Sources */,
+				47E052742C4D4A6C0011CB98 /* MainScreenFlowFactory.swift in Sources */,
 				47E052142C4ADC400011CB98 /* Coordinator.swift in Sources */,
+				47E052762C4D4AC30011CB98 /* MainScreenView.swift in Sources */,
+				47E052872C4E75670011CB98 /* UIColor+Extensions.swift in Sources */,
 				47E052572C4C1D420011CB98 /* LocalizableKeys.swift in Sources */,
 				47E0526B2C4D2C180011CB98 /* UIStackView+Extensions.swift in Sources */,
 				47E052492C4C19380011CB98 /* BaseViewController.swift in Sources */,
@@ -442,23 +537,28 @@
 				47E052272C4AE5180011CB98 /* Routable.swift in Sources */,
 				47E052402C4C17C20011CB98 /* SplashScreenFlowFactory.swift in Sources */,
 				47E052692C4CF3770011CB98 /* UIView+Extensions.swift in Sources */,
+				47E052892C4EA6550011CB98 /* AnimationView.swift in Sources */,
 				47E0521A2C4AE2FC0011CB98 /* CoordinatorFactory.swift in Sources */,
 				47E0525C2C4C1F6E0011CB98 /* LanguageType.swift in Sources */,
 				47E052542C4C1C890011CB98 /* Images.swift in Sources */,
 				47E0525F2C4C20C40011CB98 /* UserDefaultsService.swift in Sources */,
+				47E052852C4D8BA30011CB98 /* GradientView.swift in Sources */,
 				47E0523C2C4C16610011CB98 /* SplashScreenCoordinator.swift in Sources */,
 				47E052592C4C1D640011CB98 /* String+Extensions.swift in Sources */,
 				47E052442C4C18410011CB98 /* SplashScreenViewController.swift in Sources */,
 				47E052422C4C17F80011CB98 /* SplashScreenView.swift in Sources */,
 				47E052522C4C1C2F0011CB98 /* ImagesProtocol.swift in Sources */,
 				47E052632C4C4CF60011CB98 /* UILabel+Extensions.swift in Sources */,
+				47E052812C4D84500011CB98 /* WeatherEventCell.swift in Sources */,
 				47E0521C2C4AE31F0011CB98 /* CoordinatorFactoryProtocol.swift in Sources */,
+				47E052722C4D49E50011CB98 /* MainScreenCoordinator.swift in Sources */,
 				47E051F02C49989D0011CB98 /* AppDelegate.swift in Sources */,
-				47E052612C4C44F40011CB98 /* Builder.swift in Sources */,
+				47E052832C4D85C90011CB98 /* WeatherEvent.swift in Sources */,
+				47E0527C2C4D54630011CB98 /* UICollectionView+Extensions.swift in Sources */,
 				47E0521F2C4AE3690011CB98 /* BaseView.swift in Sources */,
 				47E0522D2C4AEFB10011CB98 /* Typealias.swift in Sources */,
-				47E0523E2C4C167C0011CB98 /* SplashScreenOutputCoordinator.swift in Sources */,
 				47E052212C4AE39C0011CB98 /* Presentable.swift in Sources */,
+				47E052912C4EF5030011CB98 /* UIDevice+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

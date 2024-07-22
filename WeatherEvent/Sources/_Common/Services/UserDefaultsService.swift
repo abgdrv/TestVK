@@ -15,6 +15,7 @@ protocol UserDefaultsServiceProtocol {
 
 enum UserDefaultsKey: String {
     case language
+    case event
 }
 
 final class UserDefaultsService: UserDefaultsServiceProtocol {

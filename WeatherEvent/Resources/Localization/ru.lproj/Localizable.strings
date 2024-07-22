@@ -7,3 +7,12 @@
 */
 
 "app_name" = "Погодные явления";
+"language" = "🌎 EN";
+
+"weather_clear" = "Ясно";
+"weather_rain" = "Дождь";
+"weather_thunderstorm" = "Гроза";
+"weather_fog" = "Туман";
+"weather_snow" = "Снег";
+"weather_cloudy" = "Облачно";
+"weather_partly_cloudy" = "Частично облачно";

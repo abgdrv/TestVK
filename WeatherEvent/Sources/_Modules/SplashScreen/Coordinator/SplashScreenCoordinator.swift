@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol SplashScreenOutputCoordinator {
+    var finishFlow: VoidCallback? { get set }
+}
+
 final class SplashScreenCoordinator: BaseCoordinator, SplashScreenOutputCoordinator {
     
     var finishFlow: VoidCallback?

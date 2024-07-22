@@ -15,6 +15,11 @@ final class CoordinatorFactory: CoordinatorFactoryProtocol {
         let coordinator = SplashScreenCoordinator(router: router, factory: factory)
         return coordinator
     }
+    
+    func makeMainScreenCoordinator(router: Routable) -> Coordinator & MainScreenOutputCoordinator {
+        let coordinator = MainScreenCoordinator(router: router, factory: factory)
+        return coordinator
+    }
 }
 
 private extension CoordinatorFactory {

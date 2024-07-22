@@ -9,10 +9,11 @@ import UIKit
 
 extension UILabel {
     
-    func set(font: UIFont, textColor: UIColor, textAlignment: NSTextAlignment = .left) {
+    func set(font: UIFont, textColor: UIColor, textAlignment: NSTextAlignment = .left, numberOfLines: Int = 0) {
         self.font = font
         self.textColor = textColor
         self.textAlignment = textAlignment
+        self.numberOfLines = numberOfLines
     }
     
     func setTyping(text: String, characterDelay: TimeInterval, competion: @escaping VoidCallback) {        
@@ -25,7 +26,7 @@ extension UILabel {
                     competion()
                 }
                 
-                Thread.sleep(forTimeInterval: characterDelay / 25)
+                Thread.sleep(forTimeInterval: characterDelay / 20)
             }
         }
         

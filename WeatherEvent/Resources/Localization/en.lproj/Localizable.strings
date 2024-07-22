@@ -7,3 +7,12 @@
 */
 
 "app_name" = "Weather events";
+"language" = "🌏 RU";
+
+"weather_clear" = "Clear";
+"weather_rain" = "Rain";
+"weather_thunderstorm" = "Thunderstorm";
+"weather_fog" = "Fog";
+"weather_snow" = "Snow";
+"weather_cloudy" = "Cloudy";
+"weather_partly_cloudy" = "Partly cloudy";

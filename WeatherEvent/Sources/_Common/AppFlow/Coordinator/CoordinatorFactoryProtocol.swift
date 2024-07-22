@@ -9,4 +9,5 @@ import Foundation
 
 protocol CoordinatorFactoryProtocol {
     func makeSplashScreenCoordinator(router: Routable) -> Coordinator & SplashScreenOutputCoordinator
+    func makeMainScreenCoordinator(router: Routable) -> Coordinator & MainScreenOutputCoordinator
 }
